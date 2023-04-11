@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calcu(){
+            var num1 = +prompt("your first number");
+            var num2 = +prompt("your second number");
+            var operator = prompt("operation name from these: + or - or * or /");
+            if(operator === "+"){
+            console.log(num1 + num2);
+            }
+            else if(operator === "-"){
+            console.log(num1 - num2);
+            }
+            else if(operator === "*"){
+            console.log(num1 * num2);
+            }
+            else if(operator === "/"){
+            console.log(num1 / num2);
+            }
+            else{console.log("please write the correct operator")}
+        }
+        calcu();
+    </script>
+
+</body>
+</html>
