@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>    
+ function findLongestWord(str) {
+  // split the string into an array of words
+  let words = str.split(' ');
+  
+  // initialize a variable to hold the longest word
+  let longestWord = '';
+  
+  // loop through the array of words
+  while (words.length > 0) {
+    // remove the first word from the array and assign it to a variable
+    let word = words.splice(0, 1)[0];
+    
+    // if the current word is longer than the current longest word, update the longest word variable
+    if (word.length > longestWord.length) {
+      longestWord = word;
+    }
+  }
+  
+  return longestWord;
+}
+
+// example usage
+console.log(findLongestWord("The quick brown fox jumped over the lazy dog")); // outputs "jumped"
+console.log(findLongestWord("Hello world")); // outputs "world"
+
+
+</script>
+
+</body>
+</html>
