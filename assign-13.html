@@ -9,17 +9,19 @@
 <body>
     
 <script>    
- function lol(a,b){
+ function checkchar(a,b){
 var count = 0
-   for(var i = 0; i < a.length; i++){
-    if(a[i] === b){
+var chngetocase = a.toLowerCase()
+   for(var i = 0; i < chngetocase.length; i++){
+    if(chngetocase[i] === b){
   count++;
     }
 }
 return count;
 }
-
-document.write(lol("Muhammed Hasaan" , prompt("type youe abject")))
+var yourText = prompt("Enter your Sentensce");
+var checkChar = prompt("Enter your Character to check count");
+document.write(checkchar(yourText , checkChar))
 
 </script>
 
